@@ -1,6 +1,6 @@
 let containerquotes = document.querySelector('.container');
 
-function ret   fetch('https://dummyjson.com/quotes/random')
+  fetch('https://dummyjson.com/quotes/random')
   .then((res) => res.json())
   .then((data) => {
     containerquotes.innerHTML = '';
@@ -11,7 +11,7 @@ function ret   fetch('https://dummyjson.com/quotes/random')
           <h2>${quote.quote}</h2>
           <p>${quote.author}</p>
         </div> 
-        <button> >   ${ret}</button>
+        <button> >  next</button>
       `;
     });
   });
