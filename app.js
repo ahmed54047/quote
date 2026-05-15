@@ -1,6 +1,6 @@
 let containerquotes = document.querySelector('.container');
 
-fetch('https://dummyjson.com/quotes?limit=1')
+fetch('https://dummyjson.com/quotes/random')
   .then((res) => res.json())
   .then((data) => {
     containerquotes.innerHTML = '';
