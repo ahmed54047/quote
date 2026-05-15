@@ -1,6 +1,6 @@
 let containerquotes = document.querySelector('.container');
 
-fetch('https://dummyjson.com/quotes?limit=90')
+fetch('https://dummyjson.com/quotes?limit=1')
   .then((res) => res.json())
   .then((data) => {
     containerquotes.innerHTML = '';
